@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2718098530123487362}
   - component: {fileID: 1361617076964993648}
   - component: {fileID: 332996532800558967}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 506a07ed5a98cca49aff2432f43f88c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _velocity: 80
+  _acceleration: 80
   _maxVelocity: 10
   _rotationSpeed: 450
 --- !u!114 &648549943
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e646e4ea0519f744badbbb603c66e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _serverAuth: 0
+  _isServerAuthoritative: 0
   _cheapInterpolationTime: 0.1
 --- !u!114 &2718098530123487362
 MonoBehaviour:
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 588694765373002117}
   - component: {fileID: 588694765373002119}
   - component: {fileID: 588694765373002118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 588694765804079495}
   - component: {fileID: 588694765804079494}
   - component: {fileID: 6116615862521187494}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4974902298043546349}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

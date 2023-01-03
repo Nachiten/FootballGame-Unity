@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour {
 
     public void Init(Vector3 dir) {
         GetComponent<Rigidbody>().AddForce(dir);
-        Invoke(nameof(DestroyBall), 3);
+        //Invoke(nameof(DestroyBall), 3);
     }
 
     private void DestroyBall() {
