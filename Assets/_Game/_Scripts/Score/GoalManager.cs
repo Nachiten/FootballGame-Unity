@@ -18,8 +18,14 @@ public class GoalManager : MonoBehaviour
         // Check if triggering object is a ball
         if (other.gameObject.layer != ballLayerMask)
             return;
+        
+        // Get if ball has rigidbody and is not kinematic (not stopped already)
+        bool hasRigidBodyAndNotKinematic = other.TryGetComponent(out Rigidbody theRigidbody) && !theRigidbody.isKinematic;
+
+        if (!hasRigidBodyAndNotKinematic)
+            return;
 
         scoreManager.ScoreGoal(team);
-        //ballManager.ScoreGoal(team);
+        ballManager.ScoreGoal(team);
     }
 }
