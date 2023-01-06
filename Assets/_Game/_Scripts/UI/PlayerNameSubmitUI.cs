@@ -1,6 +1,5 @@
 using TMPro;
 using Unity.Netcode;
-using Unity.Tutorials.Core.Editor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,9 +17,11 @@ public class PlayerNameSubmitUI : MonoBehaviour
     {
         string submittedText = inputField.text;
 
-        if (submittedText.IsNullOrEmpty())
+        if (submittedText == "")
             return;
         
         NetworkManager.Singleton.LocalClient.PlayerObject.GetComponentInChildren<PlayerName>().SetPlayerName(submittedText);
+
+        inputField.text = "";
     }
 }

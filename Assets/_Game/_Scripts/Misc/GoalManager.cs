@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GoalManager : MonoBehaviour
 {
     [SerializeField] private ScoreManager scoreManager;
-    [SerializeField] private BallManager ballManager;
+    [FormerlySerializedAs("ballManager")] [SerializeField] private BallGoalManager ballGoalManager;
     [SerializeField] private int team;
 
     private LayerMask ballLayerMask;
@@ -26,6 +27,6 @@ public class GoalManager : MonoBehaviour
             return;
 
         scoreManager.ScoreGoal(team);
-        ballManager.ScoreGoal(team);
+        ballGoalManager.ScoreGoal(team);
     }
 }

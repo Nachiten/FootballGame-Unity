@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BallManager : MonoBehaviour
+public class BallGoalManager : MonoBehaviour
 {
     private Rigidbody rb;
     
